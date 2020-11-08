@@ -1,0 +1,25 @@
+Ocvid-91, a new highly contagious heinekenvirus is threatening your smart-citizens. Your job is to find patient 0, the first person to have this disease.
+
+Life in the smart city is very organized. As a rule, everyone interacts with all of their friends every day. Sadly, interacting with a sick person once is enough to contract the virus. On the bright side, one only becomes contagious the next day, so the disease doesn't spread to friends of friends in the same day.
+
+Thankfully, you have the social graph of your city.
+
+In socialnetwork.in, on the first line, there are two integers, n and m, the number of citizens and the number of friendships respectively. Citizens are numbered from 1 to n. The next m lines each contain two integers, x and y, meaning that x is friends with y.
+
+In healthcare.in, on the first line, there is one integer, p: the number of sick citizens. The next line contains p integers, the numbers of the sick ones.
+
+Example:
+
+socialnetwork.in
+3 2
+1 2
+2 3
+
+healthcare.in
+2
+2 3
+
+Answer: 3
+
+Notes:
+-It is guaranteed that there is only one correct answer

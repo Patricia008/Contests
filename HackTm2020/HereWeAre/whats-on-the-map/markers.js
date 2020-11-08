@@ -42,7 +42,7 @@ function addMarkersToMap(mp) {
 		linePoints.forEach(t => {
 			t = t.split(',')
 			console.log('t', t)
-			line.push([t[0], t[1]])
+			line.push([t[1], t[0]])
 		})
 		L.polyline(line).addTo(map)
 		// mp.addObject(new H.map.Polyline(

@@ -1,0 +1,22 @@
+A smart city needs to be green. Using green energy, such as electric cars isn't enough. There needs to be nature. Trees, plants, flowers, anything that does photosythesis.
+
+Being the genius that you are, you come up with a brilliant idea: instead of planting trees in the city, why not build the city among the trees? You pick a forest where you want to build your smart city, and your trusted subordinate quickly comes up with a map of the forest. The map is an n by m matrix of zeroes and ones. A 1 in cell (i, j) means that there is a tree in that cell, and a 0 means that it is free.
+
+A house requires at least 5 connected free cells (see definition in the notes below). How many houses can you build? How many cells can they fill in total?
+
+The input file forest.in contains two integers on its first line: n and m, the sizes of the map. The next n lines each contain m values of 0 or 1.
+
+The answer is the number of houses you can build followed by the maximum number of cells you can fill, separated by ", " (without the quotes).
+
+For example, if the input file looked like:
+5 6
+0 0 0 1 0 0
+0 0 1 0 0 1
+0 1 1 1 0 1
+0 0 0 0 1 0
+1 1 1 1 1 0
+The answer would be "2, 15" (without the quotes).
+
+Notes:
+-A group of free cells is considered connected if one can get from any cell in the group to any other cell in group by moving one cell at the time in one of the four directions (left, right, up, down) and only stepping on cells in the group.
+-The houses are build as big as possible. For example if there is a group of 15 connected cells there will be one house spanning all 15 cells rather than 3 houses each spanning 5 cells.

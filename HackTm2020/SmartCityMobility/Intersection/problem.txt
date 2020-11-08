@@ -1,0 +1,20 @@
+When driving, it makes sense to stop at an intersection when you don't have priority. You don't what is happening around the corner. But what if you did?
+
+In your new smart city, all cars send their location to a centralized server. The server allows all cars to move with enormous speeds, and if two cars are going to crash in an intersection, the server sends a "slow down" message to one of the cars. The car slows down only as little as necessary to avoid the crash. If the cars pass each other by one millimeter it's ok, they didn't crash!
+
+In intersection.in there are two integers on the first line: n and m, representing how many cars there are on the x and y axes respectively.
+The second line contains n integers, representing the time it will take each car on the x axis to reach the intersection.
+The third line contains m integers, representing the time it will take each car on the y axis to reach the intersection.
+
+Your task, as the server, is to identify the cars that would crash in the intersection, and send the "slow down" signal to the ones on the x axis.
+
+The cars are identified by number, in the order that they appear. (e. g. if the x axis is given as 10 4 15 46, the car that will pass the intersection in 4 seconds is car number 2)
+
+The answer contains the numbers of the cars on the x axis that need to slow down. The numbers must be ascending, and separated by ", " (without the quotes)
+
+Example:
+4 5
+6 8 7 5
+1 7 9 6 13
+
+Answer: 1, 3

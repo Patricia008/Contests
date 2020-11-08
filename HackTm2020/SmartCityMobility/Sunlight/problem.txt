@@ -1,0 +1,21 @@
+A smart city requires green energy. You have just bought 100 solar panels for your soon-to-be smart city, but you suddenly realize that some parts of your city receive more sunlight than others. Your trusted subordinate quickly creates a sunlight map of your city, given as a matrix of n lines by m collumns, representing how much sunlight each square in your city receives on average. In each square you can place at most one solar panel. Where do you place the 100 panels in order to maximize the sunlight received by them?
+
+The input file sunlight.in contains two integers on its first line: n and m. The next n lines contain m integers each, representing how much sunlight square (i, j) receives.
+
+Consider the cells in the matrix numbered from left to right and from top to bottom, like so:
+1 2 3 4
+5 6 7 8
+9 10 11 12
+The answer contains the numbers of the cells where you install the solar panels, in increasing order, separated by ", ".
+
+
+For example, if you only had 3 solar panels, and the input file would be:
+
+3 4
+5 3 11 1
+8 9 3 7
+2 4 6 10
+
+The answer would be "3, 6, 12", without the quotes.
+
+It is guaranteed that there is only one valid answer.

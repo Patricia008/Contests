@@ -1,0 +1,13 @@
+Having a radar capturing the speed of a vehicle at an instant does not prevent the vehicle from speeding. One can slow down while passing the radar and then return to his initial speed. A smarter solution would be to record the time when a vehicle passes certain checkpoints, and using the distance between checkpoints to compute the speed.
+
+There are two input files: graph.in and log.in.
+
+graph.in contains two numbers on its first line: n, the number of checkpoints, and m, the number of roads between these checkpoints. The checkpoints are numbered from 1 to n. The next m lines each contain three positive integers: x, y, d, representing a bidirectional road from x to y of length d.
+
+log.in contains two numbers on its first line: N, the number of cars recorded in total, and M, the number of entries in the log. The cars are numbered from 1 to N. Each of the next M lines contain three numbers: x, c and t, where x is the number of the checkpoint, c is the number of the car recorded at said checkpoint, and t is the time when the car is logged. The entries are sorted by time.
+
+Given a speed limit of 100 units of distance per unit of time, find all speeding cars. The answer is a sorted list of the numbers of the speeding cars, separated by comma (e.g. "1,10,23,24,55", without the quotes).
+
+Notes:
+-A car may pass a checkpoint without being recorded.
+-A car may still exceed the speed limit and not be caught by this system. The answer must only include cars that are sure to have been speeding.
